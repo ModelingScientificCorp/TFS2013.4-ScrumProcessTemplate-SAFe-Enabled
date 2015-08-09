@@ -45,6 +45,14 @@
           <LISTITEM value="&lt;None&gt;" />
         </SUGGESTEDVALUES>
       </FIELD>
+        <FIELD name="Requirement Type" refname="Microsoft.VSTS.CMMI.RequirementType" type="String" reportable="dimension">
+            <REQUIRED />
+            <ALLOWEDVALUES>
+                <LISTITEM value="Architecture" />
+                <LISTITEM value="Business" />
+            </ALLOWEDVALUES>
+            <DEFAULT from="value" value="Business" />
+        </FIELD>
     </FIELDS>
     <WORKFLOW>
       <STATES>
@@ -209,6 +217,8 @@
                 <Control FieldName="Microsoft.VSTS.Scheduling.Effort" Type="FieldControl" Label="Effort" LabelPosition="Left" />
                 <Control FieldName="Microsoft.VSTS.Common.Severity" Type="FieldControl" Label="Severity" LabelPosition="Left" />
                 <Control FieldName="System.AreaPath" Type="WorkItemClassificationControl" Label="&amp;Area" LabelPosition="Left" />
+                <Control FieldName="Microsoft.VSTS.Common.BacklogPriority" Type="FieldControl" Label="Backlog Priority" LabelPosition="Left" />
+                <Control FieldName="Microsoft.VSTS.CMMI.RequirementType" Type="FieldControl" Label="Type" LabelPosition="Left" />
               </Column>
             </Group>
           </Column>

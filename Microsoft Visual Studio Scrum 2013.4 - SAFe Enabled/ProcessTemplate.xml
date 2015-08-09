@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ProcessTemplate>
   <metadata>
-    <name>Microsoft Visual Studio Scrum 2013.4</name>
+    <name>Microsoft Visual Studio Scrum 2013.4 - SAFe Enabled</name>
     <description>This template is for teams who follow the Scrum methodology and use Scrum terminology.</description>
     <version type="6B724908-EF14-45CF-84F8-768B5384DA45" major="3" minor="14" />
     <plugins>

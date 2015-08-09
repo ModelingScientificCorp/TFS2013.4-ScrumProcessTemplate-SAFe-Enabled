@@ -94,6 +94,15 @@
         <HELPTEXT>The build in which the feature was fixed</HELPTEXT>
       </FIELD>
       <FIELD name="Acceptance Criteria" refname="Microsoft.VSTS.Common.AcceptanceCriteria" type="HTML" />
+            <FIELD name="Requirement Type" refname="Microsoft.VSTS.CMMI.RequirementType" type="String" reportable="dimension">
+                <REQUIRED />
+                <ALLOWEDVALUES>
+                    <LISTITEM value="Architecture" />
+                    <LISTITEM value="Business" />
+                </ALLOWEDVALUES>
+                <DEFAULT from="value" value="Business" />
+            </FIELD>
+
     </FIELDS>
     <WORKFLOW>
       <STATES>

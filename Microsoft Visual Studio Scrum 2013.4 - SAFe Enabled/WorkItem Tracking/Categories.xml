@@ -4,6 +4,9 @@
   <CATEGORY name="Bug Category" refname="Microsoft.BugCategory">
     <DEFAULTWORKITEMTYPE name="Bug" />
   </CATEGORY>
+    <CATEGORY name="Epic Category" refname="Microsoft.EpicCategory">
+        <DEFAULTWORKITEMTYPE name="Epic" />
+    </CATEGORY>
   <CATEGORY name="Feature Category" refname="Microsoft.FeatureCategory">
     <DEFAULTWORKITEMTYPE name="Feature" />
   </CATEGORY>

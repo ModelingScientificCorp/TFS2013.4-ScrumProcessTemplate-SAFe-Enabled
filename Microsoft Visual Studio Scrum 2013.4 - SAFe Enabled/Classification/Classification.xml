@@ -24,7 +24,7 @@
       </Nodes>
       <properties>
         <property name="MSPROJ" value="Classification\FieldMapping.xml" isFile="true" />
-        <property name="Process Template" value="Microsoft Visual Studio Scrum 2013.4" />
+        <property name="Process Template" value="Microsoft Visual Studio Scrum 2013.4 - SAFe Enabled" />
       </properties>
     </taskXml>
   </task>

@@ -15,7 +15,7 @@
         <REQUIRED />
       </FIELD>
       <FIELD name="State" refname="System.State" type="String" reportable="dimension">
-        <HELPTEXT>The workflow state of the test case.</HELPTEXT>
+        <HELPTEXT>The workflow state of the test suite.</HELPTEXT>
       </FIELD>
       <FIELD name="Reason" refname="System.Reason" type="String" reportable="dimension">
         <HELPTEXT>The reason why  the current test suite is in the current state.</HELPTEXT>
