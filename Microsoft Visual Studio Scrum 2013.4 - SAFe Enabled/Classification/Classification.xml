@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<tasks>
+  <task id="UploadStructure" name="Creating project structure" plugin="Microsoft.ProjectCreationWizard.Classification" completionMessage="Team project structure created.">
+    <taskXml>
+      <Nodes>
+        <Node StructureType="ProjectLifecycle" Name="Iteration" xmlns="">
+          <Children>
+            <Node StructureType="ProjectLifecycle" Name="Release 1">
+              <Children>
+                <Node StructureType="ProjectLifecycle" Name="Sprint 1" />
+                <Node StructureType="ProjectLifecycle" Name="Sprint 2" />
+                <Node StructureType="ProjectLifecycle" Name="Sprint 3" />
+                <Node StructureType="ProjectLifecycle" Name="Sprint 4" />
+                <Node StructureType="ProjectLifecycle" Name="Sprint 5" />
+                <Node StructureType="ProjectLifecycle" Name="Sprint 6" />
+              </Children>
+            </Node>
+            <Node StructureType="ProjectLifecycle" Name="Release 2" />
+            <Node StructureType="ProjectLifecycle" Name="Release 3" />
+            <Node StructureType="ProjectLifecycle" Name="Release 4" />
+          </Children>
+        </Node>
+        <Node StructureType="ProjectModelHierarchy" Name="Area" xmlns="" />
+      </Nodes>
+      <properties>
+        <property name="MSPROJ" value="Classification\FieldMapping.xml" isFile="true" />
+        <property name="Process Template" value="Microsoft Visual Studio Scrum 2013.4" />
+      </properties>
+    </taskXml>
+  </task>
+</tasks>

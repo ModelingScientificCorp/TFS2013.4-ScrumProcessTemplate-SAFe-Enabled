@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<tasks>
+  <task id="SharePointPortal" name="Create Sharepoint Portal" plugin="Microsoft.ProjectCreationWizard.Portal" completionMessage="Project portal site created.">
+    <dependencies />
+    <taskXml>
+      <Portal>
+        <site template="Team Foundation Server Project Portal" language="1033" />
+        <documentLibraries>
+          <documentLibrary name="Process Guidance" description="How to make best use of the Team Foundation Server tools and process" isProcessGuidance="true" />
+          <documentLibrary name="Shared Documents" description="Shared Documents" />
+        </documentLibraries>
+        <folders>
+          <folder documentLibrary="Process Guidance" name="Supporting Files" />
+        </folders>
+        <files>
+          <!-- Process Guidance -->
+          <file source="Windows SharePoint Services\Process Guidance\ProcessGuidance.html"                    documentLibrary="Process Guidance" target="ProcessGuidance.html" />
+          <file source="Windows SharePoint Services\Process Guidance\ProcessGuidance.html"                    documentLibrary="Process Guidance" target="ProcessGuidance.aspx" />
+          <file source="Windows SharePoint Services\Process Guidance\ProcessGuidance.html"                    documentLibrary="Process Guidance" target="Supporting Files/AboutWorkItems.htm" />
+          <file source="Windows SharePoint Services\Process Guidance\ProcessGuidance.html"                    documentLibrary="Process Guidance" target="Supporting Files/AboutWorkItems.aspx" />
+          <file source="Windows SharePoint Services\Process Guidance\ProcessGuidance.html"                    documentLibrary="Process Guidance" target="Supporting Files/ProcessGuidance.htm" />
+          <file source="Windows SharePoint Services\Process Guidance\ProcessGuidance.html"                    documentLibrary="Process Guidance" target="Supporting Files/ProcessGuidance.aspx" />
+          <file source="Windows SharePoint Services\Process Guidance\Supporting Files\Bug.htm"                documentLibrary="Process Guidance" target="Supporting Files/Bug.htm" />
+          <file source="Windows SharePoint Services\Process Guidance\Supporting Files\Bug.htm"                documentLibrary="Process Guidance" target="Supporting Files/Bug.aspx" />
+          <file source="Windows SharePoint Services\Process Guidance\Supporting Files\CodeReviewRequest.htm"  documentLibrary="Process Guidance" target="Supporting Files/Code Review Request.htm" />
+          <file source="Windows SharePoint Services\Process Guidance\Supporting Files\CodeReviewRequest.htm"  documentLibrary="Process Guidance" target="Supporting Files/Code Review Request.aspx" />
+          <file source="Windows SharePoint Services\Process Guidance\Supporting Files\CodeReviewResponse.htm" documentLibrary="Process Guidance" target="Supporting Files/Code Review Response.htm" />
+          <file source="Windows SharePoint Services\Process Guidance\Supporting Files\CodeReviewResponse.htm" documentLibrary="Process Guidance" target="Supporting Files/Code Review Response.aspx" />
+          <file source="Windows SharePoint Services\Process Guidance\Supporting Files\Feature.htm"            documentLibrary="Process Guidance" target="Supporting Files/Feature.htm" />
+          <file source="Windows SharePoint Services\Process Guidance\Supporting Files\Feature.htm"            documentLibrary="Process Guidance" target="Supporting Files/Feature.aspx" />
+          <file source="Windows SharePoint Services\Process Guidance\Supporting Files\FeedbackRequest.htm"    documentLibrary="Process Guidance" target="Supporting Files/Feedback Request.htm" />
+          <file source="Windows SharePoint Services\Process Guidance\Supporting Files\FeedbackRequest.htm"    documentLibrary="Process Guidance" target="Supporting Files/Feedback Request.aspx" />
+          <file source="Windows SharePoint Services\Process Guidance\Supporting Files\FeedbackResponse.htm"   documentLibrary="Process Guidance" target="Supporting Files/Feedback Response.htm" />
+          <file source="Windows SharePoint Services\Process Guidance\Supporting Files\FeedbackResponse.htm"   documentLibrary="Process Guidance" target="Supporting Files/Feedback Response.aspx" />
+          <file source="Windows SharePoint Services\Process Guidance\Supporting Files\Impediment.htm"         documentLibrary="Process Guidance" target="Supporting Files/Impediment.htm" />
+          <file source="Windows SharePoint Services\Process Guidance\Supporting Files\Impediment.htm"         documentLibrary="Process Guidance" target="Supporting Files/Impediment.aspx" />
+          <file source="Windows SharePoint Services\Process Guidance\Supporting Files\ProductBacklogItem.htm" documentLibrary="Process Guidance" target="Supporting Files/Product Backlog Item.htm" />
+          <file source="Windows SharePoint Services\Process Guidance\Supporting Files\ProductBacklogItem.htm" documentLibrary="Process Guidance" target="Supporting Files/Product Backlog Item.aspx" />
+          <file source="Windows SharePoint Services\Process Guidance\Supporting Files\SharedSteps.htm"        documentLibrary="Process Guidance" target="Supporting Files/Shared Steps.htm" />
+          <file source="Windows SharePoint Services\Process Guidance\Supporting Files\SharedSteps.htm"        documentLibrary="Process Guidance" target="Supporting Files/Shared Steps.aspx" />
+          <file source="Windows SharePoint Services\Process Guidance\Supporting Files\Task.htm"               documentLibrary="Process Guidance" target="Supporting Files/Task.htm" />
+          <file source="Windows SharePoint Services\Process Guidance\Supporting Files\Task.htm"               documentLibrary="Process Guidance" target="Supporting Files/Task.aspx" />
+          <file source="Windows SharePoint Services\Process Guidance\Supporting Files\TestCase.htm"           documentLibrary="Process Guidance" target="Supporting Files/Test Case.htm" />
+          <file source="Windows SharePoint Services\Process Guidance\Supporting Files\TestCase.htm"           documentLibrary="Process Guidance" target="Supporting Files/Test Case.aspx" />
+        </files>
+        <activateFeatures>
+          <!-- TfsDashboardScrumWss -->
+          <feature featureId="71EC0D67-21AB-4560-A825-9D976DA09D04" />
+          <!-- TfsDashboardAgileQuickLaunch -->
+          <feature featureId="1D363A6D-D9BA-4498-AD1A-9874ACA5F827" />
+        </activateFeatures>
+      </Portal>
+    </taskXml>
+  </task>
+</tasks>

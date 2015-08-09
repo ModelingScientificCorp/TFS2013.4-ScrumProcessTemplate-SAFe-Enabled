@@ -1,0 +1,96 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<tasks>
+  <task id="Site" plugin="Microsoft.ProjectCreationWizard.Reporting" completionMessage="Project Reporting site created.">
+    <dependencies />
+    <taskXml>
+      <ReportingServices>
+        <site>
+        </site>
+      </ReportingServices>
+    </taskXml>
+  </task>
+  <task id="Populate Reports" plugin="Microsoft.ProjectCreationWizard.Reporting" completionMessage="Project reports uploaded.">
+    <dependencies>
+      <dependency taskId="Site" />
+    </dependencies>
+    <taskXml>
+      <ReportingServices>
+        <folders>
+          <folder path="Builds" />
+          <folder path="Tests" />
+        </folders>
+        <reports>
+          <report name="Backlog Overview" filename="Reports\Backlog Overview.rdl" folder="" cacheExpiration="30">
+            <parameters>
+              <parameter name="ExplicitProject" value="" />
+            </parameters>
+            <datasources>
+              <reference name="/Tfs2010ReportDS" dsname="TfsReportDS" />
+            </datasources>
+          </report>
+          <report name="Build Summary" filename="Reports\Build Summary.rdl" folder="Builds" cacheExpiration="30">
+            <parameters>
+              <parameter name="ExplicitProject" value="" />
+            </parameters>
+            <datasources>
+              <reference name="/Tfs2010ReportDS" dsname="TfsReportDS" />
+            </datasources>
+          </report>
+          <report name="Build Success Over Time" filename="Reports\Build Success over Time.rdl" folder="Builds" cacheExpiration="30">
+            <parameters>
+              <parameter name="ExplicitProject" value="" />
+            </parameters>
+            <datasources>
+              <reference name="/Tfs2010ReportDS" dsname="TfsReportDS" />
+            </datasources>
+          </report>
+          <report name="Sprint Burndown" filename="Reports\Sprint Burndown.rdl" folder="" cacheExpiration="30">
+            <parameters>
+              <parameter name="ExplicitProject" value="" />
+            </parameters>
+            <datasources>
+              <reference name="/Tfs2010OlapReportDS" dsname="TfsOlapReportDS" />
+              <reference name="/Tfs2010ReportDS" dsname="TfsReportDS" />
+            </datasources>
+          </report>
+          <report name="Release Burndown" filename="Reports\Release Burndown.rdl" folder="" cacheExpiration="30">
+            <parameters>
+              <parameter name="ExplicitProject" value="" />
+            </parameters>
+            <datasources>
+              <reference name="/Tfs2010OlapReportDS" dsname="TfsOlapReportDS" />
+              <reference name="/Tfs2010ReportDS" dsname="TfsReportDS" />
+            </datasources>
+          </report>
+          <report name="Test Case Readiness" filename="Reports\Test Case Readiness.rdl" folder="Tests" cacheExpiration="30">
+            <parameters>
+              <parameter name="ExplicitProject" value="" />
+            </parameters>
+            <datasources>
+              <reference name="/Tfs2010OlapReportDS" dsname="TfsOlapReportDS" />
+              <reference name="/Tfs2010ReportDS" dsname="TfsReportDS" />
+            </datasources>
+          </report>
+          <report name="Test Plan Progress" filename="Reports\Test Plan Progress.rdl" folder="Tests" cacheExpiration="30">
+            <parameters>
+              <parameter name="ExplicitProject" value="" />
+            </parameters>
+            <datasources>
+              <reference name="/Tfs2010OlapReportDS" dsname="TfsOlapReportDS" />
+              <reference name="/Tfs2010ReportDS" dsname="TfsReportDS" />
+            </datasources>
+          </report>
+          <report name="Velocity" filename="Reports\Velocity.rdl" folder="" cacheExpiration="30">
+            <parameters>
+              <parameter name="ExplicitProject" value="" />
+            </parameters>
+            <datasources>
+              <reference name="/Tfs2010OlapReportDS" dsname="TfsOlapReportDS" />
+              <reference name="/Tfs2010ReportDS" dsname="TfsReportDS" />
+            </datasources>
+          </report>
+        </reports>
+      </ReportingServices>
+    </taskXml>
+  </task>
+</tasks>
